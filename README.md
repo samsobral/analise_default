@@ -44,9 +44,9 @@ pip install -r requirements.txt
 
 ### Executando
 1. Abra os notebooks em `notebooks/` e rode em ordem:
-   - `01_EDA.ipynb`
-   - `02_Modelagem.ipynb` → ao final, serão gerados `artifacts/model.pkl` e `artifacts/threshold.pkl`
-   - `03_Predicao.ipynb` → contém a função de predição pedida
+   - `Analise Exploratório XHealth.ipynb`
+   - `Modelagem Default.ipynb` → ao final, serão gerados `artifacts/model.pkl` e `artifacts/threshold.pkl`
+   - `Função predict.ipynb` → contém a função de predição pedida
 2. Garanta que o CSV esteja em `_data/` (ou ajuste o caminho no notebook).
 
 ### Opção B) Conda (opcional)
