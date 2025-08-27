@@ -65,10 +65,10 @@ Abra os notebooks em notebooks/ e rode em ordem:
 
 03_Predicao.ipynb → contém a função de predição pedida
 
-Garanta que o CSV esteja em _data/ (ou ajuste o caminho no notebook)'''
+Garanta que o CSV esteja em _data/ (ou ajuste o caminho no notebook)
 
 
-🧪 Metodologia (resumo)
+# 🧪 Metodologia (resumo)
 
 Split estratificado (80/20), mantendo a proporção da classe.
 
