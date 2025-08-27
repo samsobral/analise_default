@@ -1,0 +1,8 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.env
+.venv/
+# NÃO ignore os .pkl do /artifacts
