@@ -103,40 +103,29 @@ Opcionalmente, há uma versão que também retorna a probabilidade (p_default) p
 
 🧠 Variáveis importantes (insights)
 
-Variáveis financeiras e de eventos negativos (ex.: valor_vencido, valor_quitado, valor_por_vencer, valor_total_pedido, protestos, dividas_vencidas_qtd) dominam as importâncias.
-
-Sinais cadastrais/temporais (ex.: tipo_sociedade, opcao_tributaria, month/year) têm contribuição menor/moderada.
-
-Importâncias calculadas agregando dummies por variável original. Para o sentido do efeito, recomenda-se SHAP (opcional).
+- Variáveis financeiras e de eventos negativos (ex.: valor_vencido, valor_quitado, valor_por_vencer, valor_total_pedido, protestos, dividas_vencidas_qtd) dominam as importâncias.
+- Sinais cadastrais/temporais (ex.: tipo_sociedade, opcao_tributaria, month/year) têm contribuição menor/moderada.
+- Importâncias calculadas agregando dummies por variável original. Para o sentido do efeito, recomenda-se SHAP (opcional).
 
 
 🧭 Política sugerida (exemplo)
 
-Com p_default e o cutoff:
-
-p_default < 0.15 → Aprovar
-
-0.15 ≤ p_default < 0.30 → Revisar / ajustar limite / garantia
-
-p_default ≥ 0.30 → Negar ou exigir garantia
-
-Ajuste as faixas conforme o custo de erro (FN vs. FP) e o apetite de risco.
+- Com p_default e o cutoff:
+- p_default < 0.15 → Aprovar
+- 0.15 ≤ p_default < 0.30 → Revisar / ajustar limite / garantia
+- p_default ≥ 0.30 → Negar ou exigir garantia
+- Ajuste as faixas conforme o custo de erro (FN vs. FP) e o apetite de risco.
 
 🔁 Reprodutibilidade
 
 Semente única: RANDOM_STATE = 42
-
 Versões: ver requirements.txt (ou environment.yml)
-
 Pré-processamento e modelo no mesmo Pipeline (evita vazamento)
-
 Artefatos versionados em artifacts/
 
 
 🚑 Solução de problemas
 
 Caminho do CSV: confirme _data/dataset_...csv e sep="\t" / encoding="utf-8".
-
 Categorias novas na predição: OneHotEncoder(handle_unknown="ignore") já previne erro.
-
 Tipos na predição: a função força numéricos/objetos antes de aplicar o pipeline.
