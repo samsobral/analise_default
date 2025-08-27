@@ -3,10 +3,10 @@
 Estimativa da probabilidade de **default** em pedidos B2B…
 
 ## 🎯 Objetivo
-- pipeline completo…
-- threshold operacional…
-- função de predição…
-
+Construir um modelo probabilístico para prever **default** (0/1) por pedido, com:
+- pipeline completo (pré-processamento → treino → avaliação);
+- escolha de **threshold** operacional;
+- função de **predição** que recebe um dicionário e retorna a decisão.
 
 
 
