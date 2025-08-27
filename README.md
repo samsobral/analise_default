@@ -70,6 +70,8 @@ Abra os notebooks em notebooks/ e rode em ordem:
 
 Garanta que o CSV esteja em _data/ (ou ajuste o caminho no notebook)
 
+conda env create -f environment.yml
+conda activate xhealth-default
 
 # 🧪 Metodologia (resumo)
 
