@@ -118,14 +118,13 @@ Opcionalmente, há uma versão que também retorna a probabilidade (p_default) p
 
 🔁 Reprodutibilidade
 
-Semente única: RANDOM_STATE = 42
-Versões: ver requirements.txt (ou environment.yml)
-Pré-processamento e modelo no mesmo Pipeline (evita vazamento)
-Artefatos versionados em artifacts/
+- Semente única: RANDOM_STATE = 42
+- Versões: ver requirements.txt (ou environment.yml)
+- Pré-processamento e modelo no mesmo Pipeline (evita vazamento)
+- Artefatos versionados em artifacts/
 
-
-🚑 Solução de problemas
-
-Caminho do CSV: confirme _data/dataset_...csv e sep="\t" / encoding="utf-8".
-Categorias novas na predição: OneHotEncoder(handle_unknown="ignore") já previne erro.
-Tipos na predição: a função força numéricos/objetos antes de aplicar o pipeline.
+# Solução de problemas
+- Usar o caminho do seu diretório, onde esta localizado o seu dataset para importar o arquivo
+- Caminho do CSV: confirme _data/dataset_...csv e sep="\t" / encoding="utf-8".
+- Categorias novas na predição: OneHotEncoder(handle_unknown="ignore") já previne erro.
+- Tipos na predição: a função força numéricos/objetos antes de aplicar o pipeline.
