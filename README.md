@@ -7,25 +7,8 @@ Estimativa da probabilidade de **default** em pedidos B2B…
 - threshold operacional…
 - função de predição…
 
-## 🗂️ Estrutura do repositório
-
-analise_default/
-├─ _data/
-│ └─ dataset_2021-5-26-10-14.csv # se não puder publicar, ver nota em “Dados”
-├─ artifacts/
-│ ├─ model.pkl # pipeline final (prep + modelo)
-│ └─ threshold.pkl # cutoff escolhido (ex.: 0.30)
-├─ notebooks/
-│ ├─ 01_EDA.ipynb # análise exploratória
-│ ├─ 02_Modelagem.ipynb # pipeline, modelos, CV, métricas, threshold, exportação
-│ └─ 03_Predicao.ipynb # função predict_default(d: dict) -> {"default": 0|1}
-├─ requirements.txt # (ou environment.yml)
-└─ README.md
 
 
-
-
----
 
 
 ---
