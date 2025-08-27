@@ -1,6 +1,8 @@
 # X-Health — Inferência de Default (B2B)
 
-Estimativa da probabilidade de **default** em pedidos B2B…
+Estimativa da probabilidade de **default** em pedidos B2B e definição de uma **regra de decisão** (aprovar / revisar / negar) em um *pipeline* reprodutível.
+
+---
 
 ## 🎯 Objetivo
 Construir um modelo probabilístico para prever **default** (0/1) por pedido, com:
