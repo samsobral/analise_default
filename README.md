@@ -27,16 +27,34 @@ analise_default/
 
 ---
 
+
+---
+
 ## 🗃️ Dados
 
 - Arquivo: `_data/dataset_2021-5-26-10-14.csv`  
 - Leitura: `sep="\t"`, `encoding="utf-8"`, faltantes como `"missing"`.
 - 1 linha = 1 pedido; variáveis internas (comportamento) e externas (bureaus).
-- **Taxa de default** aproximada: **~16,7%** (classe positiva = `1`).
+- **Taxa de default** aproximada: **~16,7%**.
 
-> Caso o CSV completo não possa ser publicado, incluo um **sample** e instruções no README para posicionar o arquivo real no mesmo caminho.
+> Caso o CSV completo não possa ser publicado, incluo um **sample** e instruções para posicionar o arquivo real no mesmo caminho.
 
 ---
+
+## ⚙️ Como rodar
+
+### Opção A) `venv` (Python puro)
+
+```bash
+# Windows
+python -m venv .venv
+. .venv/Scripts/activate
+pip install -r requirements.txt
+
+# Linux/Mac
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 
 ## ⚙️ Como rodar
 
