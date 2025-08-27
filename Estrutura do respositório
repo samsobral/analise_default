@@ -1,0 +1,13 @@
+xhealth-default/
+├─ _data/
+│  └─ dataset_2021-5-26-10-14.csv         # se puder publicar; se não, explicar no README
+├─ artifacts/
+│  ├─ model.pkl                           # OBRIGATÓRIO
+│  └─ threshold.pkl                       # OBRIGATÓRIO
+├─ notebooks/
+│  ├─ 01_EDA.ipynb
+│  ├─ 02_Modelagem.ipynb
+│  └─ 03_Predicao.ipynb                   # retorna {"default": 0|1}
+├─ README.md
+├─ requirements.txt  (ou environment.yml)
+└─ .gitignore
