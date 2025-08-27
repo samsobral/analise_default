@@ -68,27 +68,7 @@ conda activate xhealth-default
 - Exportação: `model.pkl` e `threshold.pkl` e função `predict_default(d)`.
 
 
-# 🧪 Metodologia (resumo)
 
-Split estratificado (80/20), mantendo a proporção da classe.
-
-Pré-processamento com ColumnTransformer:
-
-Numéricas: SimpleImputer(median) + StandardScaler
-
-Categóricas: SimpleImputer(most_frequent) + OneHotEncoder(handle_unknown="ignore")
-
-Modelagem: comparação de Logistic Regression, Random Forest e XGBoost.
-Selecionado: RandomForest (class_weight="balanced") dentro de Pipeline.
-
-Validação cruzada (5 folds estratificados) no treino, métricas: ROC-AUC, PR-AUC (classe rara) e Brier (qualidade da probabilidade).
-
-Avaliação no teste com as mesmas métricas.
-
-Escolha do threshold por F1 (equilíbrio precision × recall).
-Cutoff encontrado: 0.30.
-
-Exportação: model.pkl e threshold.pkl e função predict_default(d).
 
 
 📊 Resultados (teste)
